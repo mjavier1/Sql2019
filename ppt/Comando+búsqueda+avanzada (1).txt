@@ -1,0 +1,1 @@
+Get-ADComputer -Filter {OperatingSystem -Like "*Windows*"} -SearchBase "CN=Computers,DC=nosolohacking,DC=info"  -properties * |select-object name,OperatingSystem,Description,lastlogondate,ipv4address,ManagedBy,primarygroup
